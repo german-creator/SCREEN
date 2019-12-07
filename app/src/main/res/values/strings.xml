@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Screen</string>
+    <string name="welcome_text">Добро пожаловать</string>
+
+    <string name="Welcome_Button_Settings">Настройки</string>
+    <string name="Welcome_TextView_Default_Text">Коснитесь экрана, чтобы начать</string>
+    <string name="ProductSelection_Top_Text">Выберите товары</string>
+
+    <string name="Setting_GroupAdd_DialogFragment_Tittle">Выберите доступные покупателям группы товаров</string>
+    <string name="ProductSelection_Button_ToBasket">В корзину</string>
+    <string name="BasketAddDialogFragment_Title">Выберите добавки</string>
+
+
+    <string name="Ok">Ок</string>
+    <string name="Cancel">Отмена</string>
+    <string name="Back">Назад</string>
+
+
+</resources>

@@ -1,0 +1,144 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+
+    <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>//translucent
+        <item name="android:statusBarColor">@color/backgroundcolor</item>
+        <item name="android:navigationBarColor">@color/backgroundcolor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+    </style>
+
+    <!--<style name="ListView" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="ListView" parent="Theme.MaterialComponents">
+
+    <item name="android:background">@color/backgroundcolor</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="keyboard" parent="Theme.MaterialComponents">
+        <item name="android:fontFamily"> @font/roboto_light </item>
+        <item name="android:textColor">  @color/backgroundcolor </item>
+        <item name="android:textSize"> 18sp</item>
+        <item name="android:backgroundTint"> @color/colorPrimary </item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:gravity"> bottom</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:backgroundTint">@color/backgroundcolor</item>
+    </style>
+
+    <style name="ButtonDialog" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="ButtonSelect" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+        <!--<item name="rippleColor">@color/colorPrimary</item>-->
+        <!--<item name="strokeColor">@color/colorPrimary</item>-->
+    </style>
+
+
+    <style name="ButtonSettings" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:backgroundTint">@color/backgroundcolor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ButtonSettingsSwitch" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:gravity"> bottom|left</item>
+        <item name="android:background">@color/backgroundcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/PrimaryDark</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+
+
+    <style name="Alert" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColorAlertDialogListItem">@color/black</item>
+        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+
+    </style>
+
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowExitAnimation">@anim/myscale</item>
+    </style>
+
+
+    <style name="ToPay" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+
+    </style>
+
+
+    <style name="TextPrimary">
+        <item name="android:textSize"> 30sp </item>
+        <item name="android:textColor">@color/backgroundcolor </item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+
+    </style>
+
+    <style name="TextSecondary">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/roboto_light</item>
+
+
+    </style>
+
+    <style name="ButtomMenu_ButtonBack">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/button_back</item>
+    </style>
+
+
+    <style name="ButtomMenu_Button" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/button_back</item>
+        <item name="android:textColor">@color/backgroundcolor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+
+
+
+
+</resources>

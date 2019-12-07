@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundcolor">
+
+    <TextView
+        android:id="@+id/Settings_ChoseAdd_TextView_Title"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/Setting_GroupAdd_DialogFragment_Tittle"
+        style="@style/AppTheme"
+        android:background="@color/backgroundcolor"/>
+
+    <ListView
+        android:id="@+id/Alert_Group_Choice_ListView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="500dp"
+        style="@style/ListView"
+        />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:background="@color/backgroundcolor"></FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/Settings_ChoseAdd_Button_Сancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/AppTheme"
+            android:gravity="center"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Отмена"
+            android:typeface="monospace"
+            android:layout_weight="1"
+            />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundcolor"
+            android:layout_weight="2"></FrameLayout>
+        <Button
+            android:id="@+id/Settings_ChoseAdd_Button_SaveText"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            style="@style/AppTheme"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="СОХРАНИТЬ"
+            android:typeface="monospace"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:background="@color/backgroundcolor"></FrameLayout>
+
+</LinearLayout>

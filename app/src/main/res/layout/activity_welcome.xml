@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Welcome_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_welocme"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ImageButton
+        android:id="@+id/Welcome_Button_toSettings"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:tint="@color/backgroundcolor"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/button_settings" />
+
+
+    <TextView
+        android:id="@+id/Welcome_textView_WelcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:text="@string/welcome_text"
+        android:textAppearance="@style/TextPrimary"
+        android:textColor="@color/backgroundcolor"
+        style="@style/TextPrimary"/>
+
+    <ImageView
+        android:id="@+id/some_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@android:color/transparent"
+        android:paddingTop="60dp"
+        android:paddingRight="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_illustration"
+
+        />
+
+    <TextView
+        android:id="@+id/welcome_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        style="@style/TextSecondary"
+        android:gravity="bottom|center_horizontal"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="20dp"
+        android:text="@string/Welcome_TextView_Default_Text"
+        android:textAppearance="@style/TextSecondary"
+        android:textColor="@color/PrimaryDark" />
+
+
+</LinearLayout>

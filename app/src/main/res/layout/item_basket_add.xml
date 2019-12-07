@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="85dp"
+    android:orientation="horizontal"
+    style="Theme.MaterialComponents"
+    android:weightSum="5">
+
+                <CheckBox
+                    android:id="@+id/item_basket_add_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/AppTheme"
+                    android:backgroundTint="@color/backgroundcolor"
+                    android:layout_weight="4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/item_basket_add_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/AppTheme"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal|right"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+
+                    />
+
+</LinearLayout>
+
+
+

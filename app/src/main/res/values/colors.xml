@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="PrimaryDark">@color/colorPrimaryDark</color>
+
+    <color name="colorPrimary">#F59D83</color>
+    <color name="colorPrimaryDark">#8A5546</color>
+    <color name="colorPrimaryLight">#D4FEF3F0</color>
+
+    <color name="backgroundcolor">#FFFFFF</color>
+    <color name="grey">#dedddb</color>
+    <color name="brownLite">#B3FFE6E0</color>
+
+
+    <color name="colorAccent">#91D7F7</color>
+
+    <color name="black">#000</color>
+    <color name="myGrey">#36000000</color>
+
+    <color name="green">#000</color>
+    <color name="yellow">#000</color>
+    <color name="red">#000</color>
+    <color name="blackk">#000</color>
+
+
+<!--    <color name="colorPrimary">#F59D83</color>-->
+<!--    <color name="PrimaryDark">#B16853</color>-->
+<!--    <color name="colorPrimaryDark">#B16853</color>-->
+<!--    <color name="colorPrimaryLight">#D4FEF3F0</color>-->
+
+<!--    <color name="backgroundcolor">#FFFFFF</color>-->
+<!--    <color name="grey">#dedddb</color>-->
+<!--    <color name="brownLite">#d0bba8</color>-->
+
+
+<!--    <color name="colorAccent">#91D7F7</color>-->
+
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.BasketActivity"
+    android:id="@+id/Basket_Layout"
+    android:orientation="vertical"
+    android:weightSum="16"
+    android:background="@color/backgroundcolor"
+    >
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/myGrey"
+        tools:ignore="Suspicious0dp"></FrameLayout>
+
+    <ListView
+        android:id="@+id/Basket_ListView_Product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/ListView"
+        android:layout_weight="12"
+        android:divider="@color/grey"
+        android:dividerHeight="0.2dp"
+
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/myGrey"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        ></FrameLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/backgroundcolor"
+        android:weightSum="2"
+        >
+
+            <TextView
+                android:id="@+id/Basket_TextView_Total"
+                style="@style/ToPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="20dp"
+                android:text="Итого к оплате:"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/Basket_TextView_Sum"
+                style="@style/ToPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="20dp"
+                android:text="0"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/myGrey"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        ></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_height="0dp"
+        android:background="@color/backgroundcolor"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/backgroundcolor"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+
+
+            <Button
+                android:id="@+id/Basket_Button_PayCash"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:paddingLeft="60dp"
+                android:text="Наличными"
+                android:textColor="@color/backgroundcolor"
+                android:textSize="16sp"
+
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_cash2"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="3dp"
+            >
+
+
+            <Button
+                android:id="@+id/Basket_Button_PayCard"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center"
+                android:text="Картой"
+                android:textColor="@color/backgroundcolor"
+                android:textSize="16sp"
+                android:paddingLeft="40dp"
+                android:fontFamily="@font/roboto_light"
+                />
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_card2"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <ImageButton
+            android:id="@+id/Basket_Button_Back"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ButtomMenu_ButtonBack"
+             />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text=""
+            android:clickable="false"
+            style="@style/ButtomMenu_Button"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    tools:context=".View.Activity.PinCodeActivity"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    style="@style/AppTheme"
+    android:background="@color/backgroundcolor"
+    >
+
+    <RadioButton
+        android:id="@+id/item_radoio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/backgroundcolor"
+        android:checked="false"
+        android:clickable="false" />
+
+
+</LinearLayout>

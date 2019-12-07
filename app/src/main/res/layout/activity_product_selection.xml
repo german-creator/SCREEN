@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.Activity.ProductSelectionActivity"
+    android:id="@+id/ProductSelection_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="16"
+    android:background="@color/backgroundcolor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:layout_weight="15">
+        <FrameLayout
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            ></FrameLayout>
+
+        <!--<FrameLayout-->
+                <!--android:layout_width="5dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/backgroundcolor"></FrameLayout>-->
+
+        <ListView
+            android:id="@+id/ProductSelection_ListView_Group"
+            style="@style/ListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryLight"
+            android:divider="@color/colorPrimaryLight"
+            android:dividerHeight="10dp"
+            android:paddingTop="70dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/ProductSelection_ListView_Product"
+                style="@style/ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="70dp"
+                android:scrollbars="none"
+
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundcolor"
+            android:clickable="false"></FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        >
+
+
+
+        <ImageButton
+            android:id="@+id/ProductSelection_Button_Back"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            style="@style/ButtomMenu_ButtonBack"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+
+            <Button
+                android:id="@+id/ProductSelection_Button_ToBasket"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Корзина"
+                style="@style/ButtomMenu_Button"/>
+
+
+
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignEnd="@+id/ProductSelection_Button_ToBasket"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_marginRight="60dp"-->
+<!--                android:src="@drawable/truck"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/ProductSelection_Button_Tittle"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-24dp"
+        android:paddingTop="24dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="false"
+        android:textSize="16sp"
+        style="Widget.MaterialComponents.Button.TextButton"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/ProductSelection_Top_Text"
+        >
+    </Button>
+
+
+    <ImageButton
+        android:id="@+id/ProductSelection_Button_toBasket2"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/colorAccent"
+        android:clickable="false"
+        android:textSize="16sp"
+        style="Widget.MaterialComponents.Button.TextButton"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_light"
+        android:src="@drawable/button_to_basket_top"
+        android:scaleType="fitXY"
+        >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/ProductSelection_TextView_Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/backgroundcolor"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="17dp"
+
+
+        />
+
+
+</RelativeLayout>
